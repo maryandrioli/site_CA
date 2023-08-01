@@ -1,3 +1,4 @@
+/* Estilos globais */
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'latoRegular', Arial, sans-serif; /* Usa a fonte personalizada */
     background-color: #ffffff;
     color: #4B0082;
     padding: 20px;
@@ -13,7 +14,7 @@ body {
 
 /* Adiciona espaçamento horizontal ao corpo do texto */
 main {
-    padding:  20px; 
+    padding:  20px;
 }
 
 header {
@@ -74,7 +75,9 @@ header img {
 }
 
 h4 {
-    color: rgb(77, 5, 80);
+    color: #6a2875; /* Usa uma cor diferente para os títulos */
+    font-size: 24px; /* Tamanho do título */
+    font-weight: bold; /* Texto em negrito */
     margin-top: 20px;
 }
 
@@ -127,3 +130,26 @@ footer {
     margin: 0 auto;
 }
 
+/* Adiciona estilos para os elementos .card e .cardHeader baseados nas sugestões anteriores */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+  transition: 0.3s; /* Transição suave ao passar o mouse */
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+  cursor: pointer;
+}
+
+.txtCardHeader {
+  word-wrap: break-word;
+  font-size: 24px;
+}
+
+.txtCardHeader_Encontro {
+  word-wrap: break-word;
+  font-size: 12px;
+}
