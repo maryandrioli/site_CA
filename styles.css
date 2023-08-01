@@ -1,6 +1,6 @@
 * {
-    margin: 3;
-    padding: 3;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -8,13 +8,20 @@ body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
     color: #4B0082;
+    padding: 20px;
+}
+
+/* Adiciona espaçamento horizontal ao corpo do texto */
+main {
+    padding:  20px; 
 }
 
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ffffffff; 
+    background-color: #ffffffff;
+    padding: 20px;
 }
 
 header img {
@@ -24,6 +31,8 @@ header img {
 
 #main-nav {
     background-color: #4B0082;
+    display: flex;
+    justify-content: center;
     padding: 10px;
 }
 
@@ -39,13 +48,14 @@ header img {
 
 #introduction {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: 20px 0;
+    padding: 10px;
 }
 
 #video-container {
-    width: 35%;
-    margin-right: 10px;
+    width: 50%;
 }
 
 #video-container video {
@@ -54,22 +64,25 @@ header img {
 }
 
 #course-introduction {
-    width: 60%;
+    width: 50%;
 }
 
 #course-introduction h3, #course-introduction p {
-    margin: 10px 0;
+    margin: 10px 10;
+    margin-bottom: 10px;
+    padding: 10px;
 }
 
 h4 {
     color: rgb(77, 5, 80);
+    margin-top: 20px;
 }
 
 #course-details {
     background-color: #f5f5f5;
     color: black;
     border: 2px solid #4B0082;
-    padding: 6px;
+    padding: 20px;
     margin: 20px 0;
 }
 
@@ -94,24 +107,23 @@ h4 {
 }
 
 #topics-nav .btn-link::after {
-    content: ' \25B6'; /* Adiciona uma seta apontando para a direita */
+    content: ' \25B6'; /* Add a right-pointing arrow */
 }
 
 #topics-nav .btn-link[aria-expanded="true"]::after {
-    content: ' \25BC'; /* Muda para uma seta apontando para baixo quando expandido */
+    content: ' \25BC'; /* Change to a down-pointing arrow when expanded */
 }
 
+/* Estilos existentes para o cabeçalho, main e outros elementos aqui */
 
-@media (max-width: 600px) {
-    #introduction {
-        flex-direction: column;
-    }
-
-    #video-container {
-        width: 100%;
-    }
-
-    #course-introduction {
-        width: 100%;
-    }
+footer {
+    background-color: #f5f5f5; /* Fundo cinza claro */
+    padding: 20px 0; /* Espaçamento interno do rodapé */
 }
+
+#footer-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
